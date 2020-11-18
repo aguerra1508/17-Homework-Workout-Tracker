@@ -1,31 +1,28 @@
+// Dependencies
 const express = require("express");
 const mongoose = require("mongoose");
-const mongojs = require("mongojs");
 const logger = require("morgan");
-const path = require("path");
-const app = express();
 const PORT = process.env.PORT || 3000;
+const app = express();
 
+// Middleware
 app.use(logger("dev"));
 
+// Express App
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public"));
 
-const databaseUrl = "";
-const collections = [""];
+// MongoDB
+mongoose.connect(
+	process.env.MONGODB_URI || "mongodb://localhost/workouts",
+	{ useNewUrlParser: true });
 
-const db = mongojs(databaseUrl, collections);
+// Routes
+require("./routes/api-routes")(app);
+require("./routes/html-routes")(app);
 
-db.on("error", error => {
-  console.log("Database Error:", error);
-});
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/public/index.html"));
-});
-
+// Server
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });

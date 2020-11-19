@@ -23,7 +23,7 @@ Visual Studio (VS) code and a web browser such as Google Chrome, is needed.
 To run the application via VS code, the user have MongoDB running. In a new terminal, the user must run the following commands: `npm install` and `npm run seed` to install the necessary `package-lock.json` and `seeders` files. Once the installs are complete, the application may be run via the following command: `node server.js`.
 
 The application is also deployed via Herkou.
-Deployed application:
+Deployed application: https://hidden-brushlands-78228.herokuapp.com/
 
 ## Usage
 

@@ -27,7 +27,14 @@ Deployed application: https://hidden-brushlands-78228.herokuapp.com/
 
 ## Usage
 
-Functionality of the application:
+Entering workout information:
+![Enter Workout](2020-11-18-23-37-34.png)
+
+Reviewing stats:
+![Reviewing Stats](2020-11-18-23-40-30.png)
+
+Last workout information:
+![Last Workout](2020-11-18-23-42-04.png)
 
 ## Credits
 
@@ -46,6 +53,8 @@ None
 ## Badges
 
 ![GitHub top language](https://img.shields.io/github/languages/top/aguerra1508/17-Homework-Workout-Tracker)
+
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fhidden-brushlands-78228.herokuapp.com%2F)
 
 ## Contributing
 

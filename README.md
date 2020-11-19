@@ -28,11 +28,13 @@ Deployed application: https://hidden-brushlands-78228.herokuapp.com/
 ## Usage
 
 Entering workout information:
-![Entering Workout Info](images/Screen Shot 2020-11-18 at 11.44.22 PM.png)
+![](2020-11-18-23-50-47.png)
 
 Reviewing stats:
+![](2020-11-18-23-51-09.png)
 
 Last workout information:
+![](2020-11-18-23-51-26.png)
 
 ## Credits
 
